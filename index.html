@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="header_title">
+                <h1>Hi Arthur, welcome! You have 12 open tasks.</h1>
+            </div>
+            <div class="header_serch">
+                <div class="header_input">
+                    <input class="search-input" type="text" placeholder="Search" >
+                </div>
+            </div>
+            <div class="header_text">AR</div>
+        </div>
+    </header>
+    <nav class="navigation">
+        <button class="nav_button active">
+            <i class="fas fa-home"></i> 
+            Dashboard
+        </button>
+        <button class="nav_button">
+            <i class="fas fa-database"></i> 
+            Accounts
+        </button>
+        <button class="nav_button">
+            <i class="fas fa-users"></i>
+            Brokers
+        </button>
+        <button class="nav_button">
+            <i class="fas fa-file-export"></i>
+            Submissions
+        </button>
+        <button class="nav_button">
+            <i class="fas fa-building"></i>
+            Organizations
+        </button>
+        <button class="nav_button">
+            <i class="fas fa-bullseye"></i>
+            Goals & Rules
+        </button>
+        <button class="nav_button">
+            <i class="fas fa-key"></i>
+            Admin
+        </button>
+        <button class="nav_button">
+            <i class="fas fa-key"></i>
+            Admin
+        </button>
+        <button class="nav_button">
+            <i class="fas fa-key"></i>
+            Admin
+        </button>
+        <button class="nav_button">
+            <i class="fas fa-key"></i>
+            Admin
+        </button>
+        <button class="nav_button">
+            <i class="fas fa-key"></i>
+            Admin
+        </button>
+        <button class="nav_button_circle">
+            <i class="fas fa-arrow-left"></i>
+        </button>
+        <button class="nav_button_circle">
+            <i class="fas fa-arrow-right"></i>
+        </button>
+    </nav>
+
+    <section>
+        <div class="dashboard">
+            <div class="work-queue">
+                <h2>Work Queue</h2>
+                <div class="work-queue_tabs">
+                    <button class="work-queue_tab active">Assigned to me (12)</button>
+                    <button class="work-queue_tab">Pending Review (8)</button>
+                    <button class="work-queue_tab">Referrals (3)</button>
+                </div>
+                <table class="work-queue_table">
+                    <thead>
+                        <tr>
+                            <th>ORIGINATOR</th>
+                            <th>CLIENT/LINE</th>
+                            <th>TYPE</th>
+                            <th>STATUS</th>
+                            <th>CREATED</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="work-queue_circle">SM</span> Sam Masters</td>
+                            <td>NAMEX Tech Solutions<br><span class="work-queue_subtext">Cyber Liability</span></td>
+                            <td>Underwriter Referral</td>
+                            <td><span class="status"><span class="work_status_new"></span>New</span></td>
+                            <td>04/16/2025</td>
+                            <td><i class="fas fa-ellipsis-v"></i></td>
+
+
+                            
+                        </tr>
+                        <tr>
+                            <td><span class="work-queue_circle">AW</span> Annalise Willis</td>
+                            <td>Maritime Logistics Corp<br><span class="work-queue_subtext">Marine Cargo</span></td>
+                            <td>Underwriter Referral</td>
+                            <td><span class="status"><span class="work_status_new"></span>New</span></td>
+                            <td>04/20/2025</td>
+                            <td><i class="fas fa-ellipsis-v"></i></td>
+                        </tr>
+                        <tr>
+                            <td><span class="work-queue_circle">PD</span> Patrick Devenport</td>
+                            <td>GreenField Energy Ltd<br><span class="work-queue_subtext">Environmental</span></td>
+                            <td>Loss Control Request</td>
+                            <td><span class="status"><span class="work_status_new"></span>New</span></td>
+                            <td>04/16/2025</td>
+                            <td><i class="fas fa-ellipsis-v"></i></td>
+                        </tr>
+                        <tr>
+                            <td><span class="work-queue_circle">AK</span> Ana Killian</td>
+                            <td>NorthStar Financial Group<br><span class="work-queue_subtext">D&O Liability</span></td>
+                            <td>Underwriter Referral</td>
+                            <td><span class="status"><span class="work_status_pending"></span>Pending Review</span></td>
+                            <td>04/22/2025</td>
+                            <td><i class="fas fa-ellipsis-v"></i></td>
+                        </tr>
+                        <tr>
+                            <td><span class="work-queue_circle">AK</span> Ana Killian</td>
+                            <td>Alliance Healthcare Systems<br><span class="work-queue_subtext">Medical Malpractice</span></td>
+                            <td>Email</td>
+                            <td><span class="status"><span class="work_status_completed"></span>Completed</span></td>
+                            <td>04/28/2025</td>
+                            <td><i class="fas fa-ellipsis-v"></i></td>
+                        </tr>
+                        <tr>
+                            <td><span class="work-queue_circle">MK</span> Me</td>
+                            <td>QuantumTech Industries<br><span class="work-queue_subtext">Product Liability</span></td>
+                            <td>Email</td>
+                            <td><span class="status"><span class="work_status_completed"></span>Completed</span></td>
+                            <td>04/20/2025</td>
+                            <td><i class="fas fa-ellipsis-v"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        
+            <!-- Middle Panel -->
+            <div class="portfolio_goals">
+                <h2>Portfolio goals</h2>
+                <div class="goal">
+                    <p>PORTFOLIO LOSS RATIO TARGET</p>
+                    <div class="progress_container">
+                        <div class="progress_labels_top">
+                            <span class="label_target">TG:55%</span>
+                            <i class="triangle_blue"></i>
+                        </div>
+                        <div class="progress_bar">
+                            <div class="progress green"></div>
+                            <div class="progress yellow"></div>
+                            <div class="progress red"></div>
+                        </div>
+                        <div class="progress_labels">
+                            <span class="label_percentage">48.2%</span>
+                            <div class="label_difference_container">
+                                <i class="triangle_green"></i>
+                                <span class="label_difference">- 6.8% (GOOD)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p>RENEWAL RETENTION</p>
+                    <div class="progress_container">
+                        <div class="progress_labels_top">
+                            <span class="label_target">TG:85-90%</span>
+                        </div>
+                        <div class="progress_bar">
+                            <div class="progress_renewal red"></div>
+                            <div class="progress_renewal yellow"></div>
+                            <div class="progress_renewal green"></div>
+                            <div class="progress_renewal yellow"></div>
+                        </div>
+                        <div class="progress_labels">
+                            <span class="label_percentage_renewal">88%</span>
+                            <div class="label_difference_container">
+                                <i class="triangle_green"></i>
+                                <span class="label_difference">ON TARGET</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="business_title">NEW BUSINESS TARGET</p>
+                    <div class="progress_container">
+                        <div class="progress_bar_business">
+                            <div class="progress_business blue">
+                                <span class="label_percentage_progress">$8.1M</span>
+                            </div>
+                            <div class="progress_business dark_blue"></div>
+                        </div>
+                        <div class="label_difference_container">
+                            <span class="label_percentage_business">$12M</span>
+                        </div>
+                        <span class="label_business">67%</span>
+                    </div>
+                    <p class="annual_target_title">ANNUAL GWP TARGET</p>
+                    <div class="progress_container">
+                        <div class="progress_bar_annual_target">
+                            <div class="progress_annual_target blue">
+                                <span class="label_percentage_progress">$28.4M</span>
+                            </div>
+                            <div class="progress_annual_target dark_blue"></div>
+                        </div>
+                        <div class="label_difference_container">
+                            <span class="label_percentage_progress_annual_target">$42M</span>
+                        </div>
+                        <span class="label_annual_target">68%</span>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Right Panel -->
+             <div class="right_panel">
+                <div class="quick-actions">
+                    <h2>Quick actions</h2>
+                    <div class="quick-actions_buttons">
+                        <button class="action-button">New Submission</button>
+                        <button class="action-button">Quote Builder</button>
+                        <button class="action-button">Risks Models</button>
+                        <button class="action-button">Documents Upload</button>
+                    </div>
+                    
+                </div>
+                <div class="market-intelligence">
+                    <h2>Market intelligence</h2>
+                    <table class="market_table">
+                        <thead>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <span class="market_card">
+                                        <span class="market_title red"></span>
+                                            Rate hardening in Cyber<br> market - + 15% YoY
+                                    </span>
+                                </td>   
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="market_card">
+                                        <span class="market_title yellow"></span>
+                                        New capacity entering<br> Marine market
+                                    </span>
+                                </td>   
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="market_card">
+                                        <span class="market_title blue"></span>
+                                        Environmental regulatory<br> changes in CA
+                                    </span>
+                                </td>   
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                    
+             </div>
+            
+
+            </div>
+        </div> 
+    </section>
+
+    <section>
+        <div class="accounts">
+            <div class="accounts_container">
+                <div class="accounts_tabs">
+                        <h2>My accounts</h2>
+                        <div class="accounts_serch">
+                            <div class="accounts_input">
+                                <input class="search_accounts_input" type="text" placeholder="Search" >
+                            </div>
+                        </div>
+                    <button class="accounts_tab">Filter</button>
+                    <button class="accounts_tab">Sort</button>
+                    <button class="accounts_tab">Group</button>
+                    <button class="accounts_tab active">+ New</button>
+                </div>
+                <table class="accounts_table">
+                    <thead>
+                        <tr>
+                            <th>ACCOUNT NAME/TYPE</th>
+                            <th>LINE</th>
+                            <th>BROKER</th>
+                            <th>RENEWAL DATE</th>
+                            <th>PREMIUM</th>
+                            <th>RATED PREMIUM</th>
+                            <th>LOSS RATIO</th>
+                            <th>APPETITE</th>
+                            <th>STATUS</th>
+                            <th>TRIAGE</th>
+                            <th>WINNABILITY</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>NAMEX Tech Solutions<br><span class="accounts_subtext">Large Enterprise</span></td>
+                            <td>D&O Liability</td>
+                            <td>Willis Towers</td>
+                            <td>04/16/2025</td>
+                            <td><span class="accounts_text">$2.3M</span></td>  
+                            <td>$2.8M</td>
+                            <td><span class="accounts_progress_bar_green"><span class="progress-value">32%</span></span></td>    
+                            <td><span class="accounts_progress_bar"><span class="progress-value">HIGH</span></span></td>    
+                            <td><span class="status"><span class="accounts_status_green"></span>Active</span></td>
+                            <td><span class="accounts_status_triage">180</span></td>
+                            <td>
+                                <div class="password-strength-indicator">
+                                    <span class="dot filled"></span>
+                                    <span class="dot filled"></span>
+                                    <span class="dot filled"></span>
+                                    <span class="dot filled"></span>
+                                    <span class="accounts_winnability_text">Very Strong</span>
+                                </div>
+                            </td>
+                            <td><i class="fas fa-ellipsis-v"></i></td>   
+                        </tr>
+                        <tr>
+                            <td>Alliance Healthcare Systems<br><span class="accounts_subtext">Mid-Market</span></td>
+                            <td>Medical Malpractice</td>
+                            <td>Aon Risk</td>
+                            <td>06/30/2025</td>
+                            <td><span class="accounts_text">$1.7M</span></td>  
+                            <td>$1.9M</td>
+                            <td><span class="accounts_progress_bar_yellow"><span class="progress-value">38%</span></span></td>
+                            <td><span class="accounts_progress_bar"><span class="progress-value">MEDIUM</span></span></td>    
+                            <td><span class="status"><span class="accounts_status_blue"></span>Under review</span></td>
+                            <td><span class="accounts_status_triage">165</span></td>
+                            <td>
+                                <div class="password-strength-indicator_small">
+                                    <span class="dot filled"></span>
+                                    <span class="dot filled"></span>
+                                    <span class="dot filled"></span>
+                                    <span class="accounts_winnability_text">Strong</span>
+                                </div>
+                            </td>
+                            <td><i class="fas fa-ellipsis-v"></i></td>   
+                        </tr>
+                        <tr>
+                            <td>Maritime Logistics Corp<br><span class="accounts_subtext">Shipping/Logistics</span></td>
+                            <td>Merine Cargo</td>
+                            <td>Marsh McLennan</td>
+                            <td>09/05/2025</td>
+                            <td><span class="accounts_text">$875K</span></td>  
+                            <td>920K</td>
+                            <td><span class="accounts_progress_bar_green"><span class="progress-value">25%</span></span></td>    
+                            <td><span class="accounts_progress_bar"><span class="progress-value">HIGH</span></span></td>    
+                            <td><span class="status"><span class="accounts_status_green"></span>Active</span></td>
+                            <td><span class="accounts_status_triage">182</span></td>
+                            <td>
+                                <div class="password-strength-indicator">
+                                    <span class="dot filled"></span>
+                                    <span class="dot filled"></span>
+                                    <span class="dot filled"></span>
+                                    <span class="dot filled"></span>
+                                    <span class="accounts_winnability_text">Very Strong</span>
+                                </div>
+                            </td>
+                            <td><i class="fas fa-ellipsis-v"></i></td>   
+                        </tr>
+                         <tr>
+                            <td>GreenField Energy Ltd<br><span class="accounts_subtext">Energy Sector</span></td>
+                            <td>Environmenral Liability</td>
+                            <td>Aon Risk</td>
+                            <td>07/22/2025</td>
+                            <td><span class="accounts_text">$1.2M</span></td>  
+                            <td>$1.4M</td>
+                            <td><span class="accounts_progress_bar_red"><span class="progress-value">67%</span></span></td>    
+                            <td><span class="accounts_progress_bar"><span class="progress-value">CAUTIOUS</span></span></td>    
+                            <td><span class="status"><span class="accounts_status_blue"></span>Under review</span></td>
+                            <td><span class="accounts_status_triage">158</span></td>
+                            <td>
+                                <div class="password-strength-indicator_small">
+                                    <span class="dot filled"></span>
+                                    <span class="dot filled"></span>
+                                    <span class="dot filled"></span>
+                                    <span class="accounts_winnability_text">Medium</span>
+                                </div>
+                            </td>
+                            <td><i class="fas fa-ellipsis-v"></i></td>   
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div> 
+    </section>
+    
+    <script src="./script.js"></script>
+</body>
+</html>

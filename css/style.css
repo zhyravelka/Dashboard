@@ -1,0 +1,753 @@
+*, 
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+body{
+    background-color:rgb(18, 22, 34);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/*  header   */
+
+.header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding-left: 150px;
+}
+
+.header_title{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    padding: 0 30% 0 0;
+}
+
+.header_serch{
+    display: flex;
+    align-items: center;
+    background-color: #2b3741;
+    border-radius: 25px;
+    padding: 5px 15px;
+    width: 25%;
+    height: 10%;
+}
+
+.header_input{
+    background-color: transparent; 
+    border: none; 
+    color: #dcdde1; 
+    font-size: 16px; 
+    outline: none; 
+    flex-grow: 1; 
+    padding: 10px 0;
+}
+
+.search-input{
+  background-color: #2b3741;
+  border: none;
+  width: 100%;
+  color: #dcddde;
+  font-size: 18px;
+  outline: none;
+}
+
+.header_text{
+    background-color: #355f8a;
+    color: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    margin-left: 20px;
+}
+/*  navigation   */
+
+.navigation {
+    display: flex;
+    gap: 10px;
+    padding: 10px 20px;
+    background-color: rgb(18, 22, 34);
+    overflow-x: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.nav_button {
+    background-color: #101416;
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+    align-items: center;
+    margin-right: 8px;
+}
+
+.nav_button i {
+    color: #007bff; 
+}
+
+.nav_button.active {
+    background-color: #355f8a;
+}
+
+.nav_button.active i {
+    color: #fff; 
+}
+
+.nav_button:hover {
+    background-color: #355f8a;
+}
+
+.nav_button:hover i {
+    color: #fff; 
+}
+
+.nav_button_circle{
+    background-color: #101416; 
+    color: #8d9195; 
+    border: 1px solid #8d9195; 
+    border-radius: 50%; 
+    width: 50px; 
+    height: 50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.nav_button_circle i {
+    font-size: 20px; 
+}
+
+.nav_button_circle:hover {
+    background-color: #355f8a; 
+    color: #fff; 
+}
+
+/*  main   */
+
+.dashboard {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    color: #fff;
+}
+.work-queue_table thead tr{
+    background-color: rgb(37, 42, 61);;
+}
+
+.work-queue_table tbody tr:nth-child(even) {
+    background-color: rgb(37, 42, 61);;
+}
+
+.work-queue, .portfolio_goals, .quick-actions, .market-intelligence {
+    background-color:  rgb(49, 59, 84);
+    border-radius: 30px;
+    padding: 20px;
+    flex: 1;
+}
+
+.work-queue_tabs{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.work-queue_tab{
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.work-queue_tab.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.work-queue_tab:hover{
+    background-color: #007bff;
+    color: #fff;
+}
+
+.work-queue_table{
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    color: #fff;
+    font-size: 14px;
+}
+
+.work-queue_table thead {
+    background-color: #1e272e;
+    text-align: left;
+}
+
+.work-queue_table th, .work-queue_table td {
+    padding: 15px;
+    border-bottom: 1px solid #2b3741;
+}
+
+.work-queue_table th {
+    font-weight: bold;
+    color: #aaa;
+}
+
+.work-queue_table td {
+    vertical-align: middle;
+}
+
+.work-queue_table .work-queue_circle {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.work-queue_table .work-queue_subtext {
+    color: #aaa;
+    font-size: 12px;
+}
+
+.work-queue_table .status {
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.work_status_new{
+    width: 10px;
+    height: 10px;
+    background-color: #007bff; 
+    border-radius: 50%; 
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.work_status_pending{
+    width: 10px;
+    height: 10px;
+    background-color: #ffc107; 
+    border-radius: 50%; 
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.work_status_completed{
+    width: 10px;
+    height: 10px;
+    background-color: #28a745; 
+    border-radius: 50%; 
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.work-queue_table i {
+    color: #aaa;
+    cursor: pointer;
+}
+
+.goal p{
+    color: #aaa;
+}
+
+
+.progress_сontainer {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+.progress_labels_top {
+    position: relative;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #aaa;
+}
+
+.label_target {
+    font-size: 14px;
+    display: block;
+}
+
+.triangle_blue{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #417cbb;
+    margin: 0 auto;
+}
+
+.progress_bar {
+    display: flex;
+    height: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.progress .progress_renewal .progress_business{
+    height: 100%;
+}
+
+.progress.green {
+    width: 48%;
+    background-color: rgb(113, 211, 113); 
+}
+
+.progress.yellow {
+    width: 7%;
+    background-color: yellow; 
+}
+
+.progress.red {
+    width: 45%;
+    background-color: red; 
+}
+
+.progress_labels {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.label_percentage {
+    position: relative;
+    font-size: 16px;
+    top: -25px;
+    margin: 0 0 0 40%;
+}
+
+.label_difference_container{
+    display: block;
+    margin-left: 45%;
+    position: relative;
+    top: -20px;
+}
+
+.triangle_green {
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid rgb(113, 211, 113);
+    margin-left: 5px;
+    transform: rotate(0.5turn);
+    
+}
+
+.label_difference {
+    margin-top: 5px;
+    color: rgb(113, 211, 113);
+    font-size: 14px;
+}
+
+.progress_renewal.red {
+    width: 5%;
+    background-color: red; 
+}
+
+.progress_renewal.yellow {
+    width: 35%;
+    background-color: yellow; 
+}
+
+.progress_renewal.green {
+    width: 25%;
+    background-color: rgb(113, 211, 113); 
+}
+
+.label_percentage_renewal{
+    position: relative;
+    font-size: 16px;
+    top: -25px;
+    margin: 0 0 0 50%;
+}
+
+.business_title, .annual_target_title {
+    margin-bottom: 0px;
+}
+
+.progress_bar_business, .progress_bar_annual_target{
+    display: flex;
+    width: 70%;
+    height: 35px;
+    overflow: hidden;
+    background-color: rgb(64, 73, 107);
+    position: relative;
+    border-radius: 0 15px 15px 0;
+}
+.progress_business.blue, .progress_annual_target.blue {
+    border-radius: 0 15px 15px 0; 
+    width: 30%;
+    background: linear-gradient(to right, blue, rgb(123, 158, 168));
+}
+
+.progress_business.dark_blue, .progress_annual_target.dark_blue {
+    width: 40%;
+    background-color: rgb(64, 73, 107);
+}
+
+
+.label_percentage_progress{
+    position: absolute;
+    left: 20%;
+    font-size: 16px;
+    margin: 5px;
+}
+
+.label_percentage_business, .label_percentage_progress_annual_target{
+    position: relative;
+    font-size: 18px;
+    top: -10px;
+    margin: 0 0 0 50%;
+}
+
+.label_business, .label_annual_target{ 
+    font-size: 14px;
+    color: #aaa;
+    display: block;
+    margin-top: 5px;
+    margin-left: 20%;
+    position: relative;
+    top: -30px;
+}
+
+.right_panel{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.quick-actions_buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.action-button{
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.market_table {
+    width: 100%;
+    border-spacing: 0 10px; 
+    border-collapse: collapse; 
+}
+
+.market_card{
+    font-size: 24px;
+}
+
+.market_title{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; 
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.market_table tbody tr {
+    border-bottom: 1px solid rgb(41, 50, 69);; 
+}
+
+.market_table tbody tr:last-child {
+    border-bottom: 2px solid rgb(41, 50, 69);; 
+}
+
+.market_title.red{
+    background-color: rgb(185, 59, 59); 
+}
+.market_title.yellow{
+    background-color: rgb(253, 210, 97); 
+}
+
+.market_title.blue{
+    background-color: rgb(30, 64, 175); 
+}
+
+
+/*My acccounts*/
+
+.accounts{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    color: #fff;
+}
+
+.accounts_container{
+    background-color: rgb(49, 59, 84);
+    border-radius: 30px;
+    padding: 20px;
+    flex: 1;
+}
+    
+.accounts_tabs{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.accounts_serch{
+    display: flex;
+    align-items: center;
+    background-color: #2b3741;
+    border-radius: 25px;
+    padding: 5px 15px;
+    width: 20%;
+    height: 10%;
+}
+
+.accounts_input{
+    background-color: transparent; 
+    border: none; 
+    color: #dcdde1; 
+    font-size: 16px; 
+    outline: none; 
+    flex-grow: 1; 
+    padding: 10px 0;
+}
+
+.search_accounts_input{
+  background-color: #2b3741;
+  border: none;
+  width: 100%;
+  color: #dcddde;
+  font-size: 18px;
+  outline: none;
+}
+
+.accounts_tab {
+    width: 5%;
+    background-color: rgb(49, 59, 84);
+    color: #007bff;
+    border: 1px solid #007bff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.accounts_tab:hover{
+    background-color: #007bff;
+    color: #fff;
+}
+
+.accounts_tab.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.accounts_table{
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    color: #fff;
+    font-size: 14px;
+}
+
+.accounts_table thead tr{
+    background-color: rgb(37, 42, 61);;
+}
+
+.accounts_table tbody tr:nth-child(even) {
+    background-color: rgb(37, 42, 61);;
+}
+
+.work-queue, .portfolio_goals, .quick-actions, .market-intelligence {
+    background-color:  rgb(49, 59, 84);
+    border-radius: 30px;
+    padding: 20px;
+    flex: 1;
+}
+
+
+
+
+.accounts_table thead {
+    background-color: #1e272e;
+    text-align: left;
+}
+
+.accounts_table th, .accounts_table td {
+    padding: 15px;
+    border-bottom: 1px solid #2b3741;
+}
+
+.accounts_table th {
+    font-weight: bold;
+    color: #aaa;
+}
+
+.accounts_table td {
+    vertical-align: middle;
+}
+
+.accounts_table .work-queue_circle {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.accounts_table .accounts_subtext {
+    color: #aaa;
+    font-size: 12px;
+}
+
+.accounts_text{
+    color: #007bff;
+
+}
+
+.accounts_table .status {
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.accounts_status_blue{
+    width: 10px;
+    height: 10px;
+    background-color: #007bff; 
+    border-radius: 50%; 
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.accounts_status_green{
+    width: 10px;
+    height: 10px;
+    background-color: #28a745; 
+    border-radius: 50%; 
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.accounts_table i {
+    color: #aaa;
+    cursor: pointer;
+}
+.accounts_progress_bar_green, 
+.accounts_progress_bar_yellow,
+.accounts_progress_bar_red{
+    padding: 5px;
+    width: 50%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.accounts_progress_bar_green{
+    background-color: rgb(59, 185, 121);
+}
+.accounts_progress_bar_yellow{
+    background-color: rgb(253, 210, 97);
+}
+.accounts_progress_bar_red{
+    background-color: rgb(185, 59, 59);
+}
+
+.progress-value{
+    font-size: 16px;
+}
+
+.accounts_progress_bar{
+    background-color: rgb(30, 64, 175);
+    padding: 5px;
+    width: 75%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.accounts_status_triage{
+    width: 5%;
+    background-color: rgb(49, 59, 84);
+    color: #007bff;
+    border: 1px solid #007bff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.password-strength-indicator,
+.password-strength-indicator_small{
+    
+    background-color: rgb(30, 34, 51);
+    border: 1px solid #007bff; 
+    border-radius: 20px; 
+    padding: 8px 15px; 
+    display: flex;
+    align-items: center; 
+}
+.password-strength-indicator{
+    width: 75%;
+}
+.password-strength-indicator_small{
+    width: 55%;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%; 
+  background-color: #485460; 
+  margin-right: 8px; 
+}
+
+.dot.filled {
+  background-color: #007bff; 
+}
+
+.accounts_winnability_text{
+    color: #007bff; 
+    font-size: 16px;
+}
